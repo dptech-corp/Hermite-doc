@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview &mdash; Hermite-FEP-doc 0.3.8 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to Hermite-FEP-doc’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Hermite-FEP-doc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hermite-gui">Hermite GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hermite-gui-1">Hermite GUI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-theory-in-fep">Basic Theory in FEP</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#usage">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#login-and-preparation">Login and preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build-the-perturbation-graph">Build the Perturbation Graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#visualize-and-modify-perturbation-graph">Visualize and Modify Perturbation Graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#designating-parameters-for-md">Designating Parameters for MD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#monitor-job-status">Monitor Job Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#results-and-analysis">Results and Analysis</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Hermite-FEP-doc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Overview</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/main.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="line-block">
+<div class="line">Hermite-FEP</div>
+<div class="line">User Manual</div>
+<div class="line">Version: 0.2.2</div>
+</div>
+<div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<p>Hermite is a chemical simulation software for use in pharmaceutical and
+biotechnology research. Major features of Hermite include protein
+preparation, ligand preparation, docking, vritual screening, molecule
+generator, similarity search, molecular clustering, ADME/Toxicity and
+QSAR . Potential applications of Hermite include free energy
+perturbation (FEP), binding site prediction, structure prediction,
+homology modeling, ligand design and etc .</p>
+<div class="section" id="hermite-gui">
+<h2>Hermite GUI<a class="headerlink" href="#hermite-gui" title="Permalink to this headline">¶</a></h2>
+<p>The Hermite GUI has a wide range of features and tools. As shown in Fig.
+1.1, the Hermite main window consists of Title Bar, Menu Bar, Toolbar,
+Pipeline, Entry list, Information Bar, Command Input Area and Workspace.
+All these features are listed below.</p>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="_images/main_window2.jpg"><img alt="image" src="_images/main_window2.jpg" style="width: 100.0%;" /></a>
+<p class="caption"><span class="caption-text">image</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>Figure 1.1</strong> Hermite GUI.</p>
+</div>
+<div class="section" id="hermite-gui-1">
+<span id="id1"></span><h2>Hermite GUI<a class="headerlink" href="#hermite-gui-1" title="Permalink to this headline">¶</a></h2>
+<p>The Hermite-FEP module is implemented within Hermite, and can be invoked
+by clicking the “Free Energy Perturbation”.</p>
+<div class="figure align-default" id="id3">
+<a class="reference internal image-reference" href="_images/Hermite-FEP-GUI.png"><img alt="image" src="_images/Hermite-FEP-GUI.png" style="width: 76.0%;" /></a>
+<p class="caption"><span class="caption-text">image</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>Figure 1.2</strong> Hermite-FEP GUI.</p>
+</div>
+<div class="section" id="basic-theory-in-fep">
+<h2>Basic Theory in FEP<a class="headerlink" href="#basic-theory-in-fep" title="Permalink to this headline">¶</a></h2>
+<p>Accurate <em>in silico</em> prediction of protein-ligand binding affinities has
+been a primary objective of structure-based drug design. With the
+development of combinations of force fields, sampling techniques, deep
+learning and high performance computers, the binding free energy
+calculations have shown significant promise in reliably generating
+accurate predictions in the context of drug discovery projects.</p>
+<p>Here, we focus on the scenario where one ligand molecule forms a
+reversible noncovalent complex with the biological unit of a
+macro-molecule at thermodynamic equilibrium with the unbound molecules
+in solution. The free energy difference between these two end points can
+be computed by</p>
+<div class="math notranslate nohighlight">
+\[RT \ln(K_D) = \Delta G = - RT \ln \frac{Z_{\rm complex} }{ Z_{\rm solvated}}\]</div>
+<p>However, this method faces the problem of sampling difficulty, due to
+the huge difference of transformation. Consequently, now we turn to
+calculating the relative binding free energy. Within this context, a
+simplification can be introduced to reduce the amount of sampling
+needed:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+%    RT ln(K_D) = \Delta G = - RT ln \frac{Z_{complex} }{ Z_{solvated}}
+\Delta \Delta G_{\rm A,B} &amp; = \Delta G_{\rm B} - \Delta G_{\rm A} \\
+&amp; = -RT \ln  \frac{Z_{\rm complex}^{\rm B} Z_{\rm solvated}^{\rm A} }{Z_{\rm complex}^{\rm A} Z_{\rm solvated}^{\rm B}} \\
+&amp; = \Delta G_{\rm A,B\, complex} - \Delta G_{\rm A,B\, solvated}\end{aligned}\end{split}\]</div>
+<p>Then, we use the Free Energy Perturbation (FEP) method to evaluate
+<span class="math notranslate nohighlight">\(\Delta G_{\rm A,B\, complex}\)</span> and
+<span class="math notranslate nohighlight">\(\Delta G_{\rm A,B\, solvated}\)</span>, respectively. Suppose there is an
+alchemical path which transforms <span class="math notranslate nohighlight">\(a\)</span> to <span class="math notranslate nohighlight">\(b\)</span>, and denoted by
+<span class="math notranslate nohighlight">\(\lambda \in \{0,1\}\)</span>. The Hamiltonian <span class="math notranslate nohighlight">\(H\)</span> and free energy
+<span class="math notranslate nohighlight">\(G\)</span> along the path can be evaluated by interpolation:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    H(\lambda) &amp; = \lambda H_{\rm A} + (1- \lambda) H_{\rm B} \\
+    G(\lambda) &amp; = -\frac{1}{\beta} \ln \int e^{-\beta H(\lambda)} dx\end{aligned}\end{split}\]</div>
+<p>Then <span class="math notranslate nohighlight">\(G(0) = G_{\rm A}\)</span> and <span class="math notranslate nohighlight">\(G(1) = G_{\rm B}\)</span>. The free
+energy differences between “A” and “B” can be obtained</p>
+<div class="math notranslate nohighlight">
+\[\Delta G_{\rm A, B}  = G(1) - G(0) = \int_0^1 \frac{d G(\lambda)}{d \lambda} d \lambda
+%= \int_0^1 &lt;\frac{d H }{d \lambda}&gt;_\lambda d \lambda
+\label{free_energy}\]</div>
+<p>We use the multistate Bennett acceptance ratio (MBAR) method to evaluate
+Eq.(<a class="reference external" href="#free_energy">[free_energy]</a>). If
+<span class="math notranslate nohighlight">\(\Delta \Delta G = \Delta G_{\rm B} - \Delta G_{\rm A} &lt; 0\)</span>, then
+the ligand B is favored over A by the protein. Thus, by comparing
+relative free energies among all ligands, we can sort their binding
+affinity.</p>
+<p>We perform Molecular Dynamics to sample possible configurations and
+evaluate the ensemble. To enhance the sampling efficiency, we apply
+Replica Exchange with Solute Tempering (REST2).</p>
+</div>
+</div>
+<div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>For windows users, download the package and unzip it, you may find a
+folder <code class="docutils literal notranslate"><span class="pre">exe.win-amd64-3.7</span></code>. Enter it, verify your configurations in
+<code class="docutils literal notranslate"><span class="pre">config.json</span></code>.</p>
+<p>For linux uses, you should first install such a package.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">libglvnd</span><span class="o">-</span><span class="n">dev</span>
+</pre></div>
+</div>
+<p>Then, download the package and uncompress it. You may find a folder
+<code class="docutils literal notranslate"><span class="pre">exe.linux-x86\_64-3.7</span></code>.</p>
+<p>Enter it, verify your configurations in <code class="docutils literal notranslate"><span class="pre">config.json</span></code>.</p>
+<p>Below configuration is used to submit to DP-CloudServer.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;username&quot;</span><span class="p">:</span> <span class="s2">&quot;USERNAME&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;PASSWORD&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;LICENSE&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;jobs&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;working_path&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;base_url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://cloudserver.deepmd.net&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;endpoint&quot;</span> <span class="p">:</span> <span class="s2">&quot;http://oss-cn-shenzhen.aliyuncs.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;bucket&quot;</span> <span class="p">:</span> <span class="s2">&quot;dpcloudserver&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;login_url&quot;</span> <span class="p">:</span> <span class="s2">&quot;http://cloudserver.deepmd.net&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;upload_channel&quot;</span><span class="p">:</span> <span class="s2">&quot;oss&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;web_server&quot;</span> <span class="p">:</span> <span class="s2">&quot;cloudserver&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;machine_settings&quot;</span><span class="p">:</span>
+       <span class="p">{</span>
+           <span class="s2">&quot;is_root&quot;</span> <span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+           <span class="s2">&quot;is_hot_update&quot;</span> <span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+           <span class="s2">&quot;is_download_all_prep&quot;</span> <span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+           <span class="s2">&quot;is_download_log&quot;</span> <span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+           <span class="s2">&quot;env_prepare&quot;</span> <span class="p">:</span> <span class="s2">&quot;/root/env/gmx_2020.2_gpuall_021721.env&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;env_simulation&quot;</span> <span class="p">:</span> <span class="s2">&quot;/root/env/gmx_2020.2_gpuall_021721.env&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;server_feprep&quot;</span> <span class="p">:</span> <span class="s2">&quot;/root/Hermite-fep/FEprep&quot;</span>
+       <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Notes: If you do not have an account, you may register at
+<a class="reference external" href="http://cloudserver.deepmd.net">http://cloudserver.deepmd.net</a>. The connection to
+<a class="reference external" href="http://cloudserver.deepmd.net">http://cloudserver.deepmd.net</a> is necessary, which is used only for
+checking license and will not receive any input files.</p>
+<p>Notes: Each client owns a unique license for submitting jobs. If you
+change computer to run Hermite-fep, you should change license
+accordingly.</p>
+<p>In this tutorial, we will use <strong>tnks2</strong> from Merck’s benchmark as an
+example.</p>
+</div>
+<div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="login-and-preparation">
+<h2>Login and preparation<a class="headerlink" href="#login-and-preparation" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id4">
+<a class="reference internal image-reference" href="_images/login.jpg"><img alt="image" src="_images/login.jpg" style="width: 90.0%;" /></a>
+<p class="caption"><span class="caption-text">image</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic">
+<li><p>Complete your username and click <code class="docutils literal notranslate"><span class="pre">login</span></code>. Notes: Login is
+necessary, otherwise you cannot submit fep jobs.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Browse</span></code> in the <code class="docutils literal notranslate"><span class="pre">Job</span> <span class="pre">dir</span></code> part and choose a folder as
+working directory.</p>
+<p>Notes: We recommend that you use a blank folder in your first try.</p>
+</li>
+<li><p>(Optional) Click <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">Project</span></code> to choose a folder with all
+prepared files (which is built in a former preparation, or a
+downloaded folder), this will skip preparation steps (up to 3.4)and
+you can submit job directly.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Browse</span></code> in the <code class="docutils literal notranslate"><span class="pre">Protein</span> <span class="pre">file</span></code> part and choose
+<code class="docutils literal notranslate"><span class="pre">protein.pdb</span></code> to load the protein structure.</p>
+<p>Notes: Here, <code class="docutils literal notranslate"><span class="pre">.pdb</span></code> format is expected. It’s strongly suggested
+that the protein file is properly prepared, without missing atoms,
+broken chains, and reagent molecules in crystallization like
+<span class="math notranslate nohighlight">\(\rm CH_3OH\)</span> and <span class="math notranslate nohighlight">\(\rm HCO_3^-\)</span>.</p>
+</li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Browse</span></code> in the <code class="docutils literal notranslate"><span class="pre">Ligand</span> <span class="pre">files</span></code> part and choose ligand files
+to load.</p>
+<p><code class="docutils literal notranslate"><span class="pre">.sdf</span></code> and <code class="docutils literal notranslate"><span class="pre">.mol</span></code> formats are prefered. You can either load them
+from separate files or from one file containing a series of ligands.</p>
+</li>
+<li><div class="line-block">
+<div class="line">Click <code class="docutils literal notranslate"><span class="pre">Next</span> <span class="pre">-&gt;</span></code> and go to the <code class="docutils literal notranslate"><span class="pre">Perturbation</span> <span class="pre">Graph</span></code> part.</div>
+<div class="line">Notes: The <code class="docutils literal notranslate"><span class="pre">Next</span> <span class="pre">-&gt;</span></code> button should be clicked before entering
+next step!</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="build-the-perturbation-graph">
+<h2>Build the Perturbation Graph<a class="headerlink" href="#build-the-perturbation-graph" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id5">
+<a class="reference internal image-reference" href="_images/pert1.png"><img alt="image" src="_images/pert1.png" style="width: 90.0%;" /></a>
+<p class="caption"><span class="caption-text">image</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic">
+<li><p>Build the perturbation graph. There are two ways. First, you can
+choose the number of cycles and click <code class="docutils literal notranslate"><span class="pre">Generate</span></code> in the lower left.
+Second, you can load the graph from an existing file, in which each
+line is composed of two ligand names joint with a space. You can
+click <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">graph</span></code>.</p>
+<p>Notes: Each edge on the graph corresponds to one relative free energy
+calculation. And the arrow points from the start ligands to the end
+ligands. The value on the edge is related to the similarity of
+molecules.</p>
+</li>
+<li><p>Modify the perturbation graph. After a graph is generated, you can
+modify the graph by adding or deleting edges.</p></li>
+<li><p>(Optional) Import Experimental Data. If your ligand files contain
+experimental affinity data, it will be loaded automatically by
+Hermite-FEP. The sdf files should contain <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">&lt;IC50[uM]&gt;</span></code>,
+<code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">&lt;IC50[nM]&gt;</span></code>, or <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">&lt;exp&gt;</span></code> (in kcal/mol) keywords and values.
+Or you can click <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">Affinity</span> <span class="pre">Data</span></code> to import a <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file
+to load experimental data. The <code class="docutils literal notranslate"><span class="pre">.csv</span></code> file you import should
+contain 3 columns. The 1st column is the ligand name (the same to
+your ligand filename), 2nd column the affinity, and 3rd column the
+experimental error.</p></li>
+<li><p>(Optional) Check the overlap between loaded ligands in 2D perspective
+on the right <strong>or</strong> in the 3D perspective on the Hermite viewer by
+clicking <code class="docutils literal notranslate"><span class="pre">Visualize</span> <span class="pre">All</span> <span class="pre">in</span> <span class="pre">Hermite</span></code>. (See demo in next page)</p></li>
+</ol>
+<div class="figure align-default" id="id6">
+<a class="reference internal image-reference" href="_images/show_all.png"><img alt="View protein and ligands in Hermite" src="_images/show_all.png" style="width: 90.0%;" /></a>
+<p class="caption"><span class="caption-text">View protein and ligands in Hermite</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="visualize-and-modify-perturbation-graph">
+<h2>Visualize and Modify Perturbation Graph<a class="headerlink" href="#visualize-and-modify-perturbation-graph" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id7">
+<a class="reference internal image-reference" href="_images/pert_graph_pair.png"><img alt="image" src="_images/pert_graph_pair.png" style="width: 90.0%;" /></a>
+<p class="caption"><span class="caption-text">image</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic">
+<li><p>(Optional) Click tab <code class="docutils literal notranslate"><span class="pre">Pairs</span></code> and the details of each pair of
+relative free energy calculation are showed.</p></li>
+<li><p>(Optional) Select a ligand pair of interest from combo-box
+<code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Pair</span></code>.</p></li>
+<li><p>(Optional) Check the atom-by-atom mapping relationship for selected
+pair on the Hermite viewer by clicking <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Mapping</span> <span class="pre">in</span> <span class="pre">Hermite</span></code>.</p>
+<div class="figure align-default" id="id8">
+<a class="reference internal image-reference" href="_images/show_mapping.png"><img alt="Show mapping in Hermite" src="_images/show_mapping.png" style="width: 90.0%;" /></a>
+<p class="caption"><span class="caption-text">Show mapping in Hermite</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Check the atom-by-atom mapping of perturbation between pairs on the
+Hermite viewer by clicking <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Pert</span> <span class="pre">in</span> <span class="pre">Hermite</span></code>.</p>
+<div class="figure align-default" id="id9">
+<a class="reference internal image-reference" href="_images/show_pert.png"><img alt="Show Pert in Hermite" src="_images/show_pert.png" style="width: 90.0%;" /></a>
+<p class="caption"><span class="caption-text">Show Pert in Hermite</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>(Optional) Modify the perturbation graph by clicking ligand pair on
+the right window and then click <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">edge</span></code> and Delete edge button.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Next</span> <span class="pre">-&gt;</span></code> to the next part, designating parameters for MD.</p>
+<p>Notes: The <code class="docutils literal notranslate"><span class="pre">Next</span> <span class="pre">-&gt;</span></code> button should be clicked before entering next
+step!</p>
+</li>
+</ol>
+</div>
+<div class="section" id="designating-parameters-for-md">
+<h2>Designating Parameters for MD<a class="headerlink" href="#designating-parameters-for-md" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id10">
+<a class="reference internal image-reference" href="_images/simulation_settings1.jpg"><img alt="image" src="_images/simulation_settings1.jpg" style="width: 90.0%;" /></a>
+<p class="caption"><span class="caption-text">image</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic">
+<li><p>Enter the <code class="docutils literal notranslate"><span class="pre">Simulation</span> <span class="pre">time</span></code> and <code class="docutils literal notranslate"><span class="pre">dt</span></code> in the corresponding boxes.</p>
+<p>Notes: <code class="docutils literal notranslate"><span class="pre">Simulation</span> <span class="pre">time</span></code> is the total time that you want to
+stimulate for the system (per lambda), and <code class="docutils literal notranslate"><span class="pre">dt</span></code> (unit: ps) is the
+time step in the time evolution process. Then the steps of molecular
+dynamics can be determined.</p>
+</li>
+<li><p>Modify other parameters which are consistent with those adopted by
+Gromacs.</p>
+<p>Notes: If you are not familiar with these parameters, you can use the
+defaulted parameters. <code class="docutils literal notranslate"><span class="pre">Adaptive</span> <span class="pre">lambda</span> <span class="pre">and</span> <span class="pre">temperatures</span></code> means that
+we will perform an extra short simulation to optimize these two
+parameters. Otherwise, if you want to quick-test, you can choose not.</p>
+</li>
+<li><p>Specify computation resources. You can specify the number of GPUs and
+CPUs for each FEP pair and the name of node you want to use. If you
+choose <code class="docutils literal notranslate"><span class="pre">Not</span> <span class="pre">specified</span></code> in <code class="docutils literal notranslate"><span class="pre">Nodelist</span></code>, all nodes can be candidates
+for running FEP. If you submit to DP-CloudServer, you may ignore this
+settings.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Run</span></code> and the FEP job will be submitted. Click <code class="docutils literal notranslate"><span class="pre">Results</span></code>
+tab to monitor the job status.</p></li>
+</ol>
+</div>
+<div class="section" id="monitor-job-status">
+<h2>Monitor Job Status<a class="headerlink" href="#monitor-job-status" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id11">
+<a class="reference internal image-reference" href="_images/job.png"><img alt="image" src="_images/job.png" style="width: 90.0%;" /></a>
+<p class="caption"><span class="caption-text">image</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic">
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Job</span> <span class="pre">ID</span></code> to choose the job to monitor. The first string is
+the unique <code class="docutils literal notranslate"><span class="pre">Job</span> <span class="pre">ID</span></code> and the second is your project name, which is
+the name of the <code class="docutils literal notranslate"><span class="pre">Job</span> <span class="pre">dir</span></code> folder you browsed in preparation.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">current</span> <span class="pre">results</span></code> to obtain the processing information of
+the job. You may see only one line at your first glance. The first
+line denotes the preparation for forcefield parameters. Usually this
+step needs several minutes for each ligand.</p></li>
+<li><p>After some time, click <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">current</span> <span class="pre">results</span></code> again. You may see all
+calculations of FEP pairs have been started. Possible status includes
+<code class="docutils literal notranslate"><span class="pre">Pending</span></code>, <code class="docutils literal notranslate"><span class="pre">Running</span></code> and <code class="docutils literal notranslate"><span class="pre">Finish</span></code>. You can also see the start
+time and end time for each job.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">current</span> <span class="pre">results</span></code> when all jobs are finished.</p>
+<p>Notes: all results are downloaded into the folder
+<code class="docutils literal notranslate"><span class="pre">Hermite\_home/lib/viewer/download</span></code>. You may find some subfolders
+in it , each with a unique job-id.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="results-and-analysis">
+<h2>Results and Analysis<a class="headerlink" href="#results-and-analysis" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>You can see the summary for prediction of each ligand and the
+correlation plot (if there is experimental affinity data) in
+<code class="docutils literal notranslate"><span class="pre">Overview</span></code>.</p>
+<div class="figure align-default" id="id12">
+<a class="reference internal image-reference" href="_images/result.png"><img alt="image" src="_images/result.png" style="width: 65.0%;" /></a>
+<p class="caption"><span class="caption-text">image</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>In the tab <code class="docutils literal notranslate"><span class="pre">Pair</span> <span class="pre">Results</span></code>, you can see the prediction of the
+relative free energy of each perturbation, with mean and average
+provided. The unit is in kcal/mol.</p>
+<div class="figure align-default" id="id13">
+<a class="reference internal image-reference" href="_images/pair_result.png"><img alt="image" src="_images/pair_result.png" style="width: 65.0%;" /></a>
+<p class="caption"><span class="caption-text">image</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>In the tab <code class="docutils literal notranslate"><span class="pre">Pair</span> <span class="pre">Analysis</span></code>, you can select a pair of interest and
+visualize the convergence of results.</p>
+<div class="figure align-default" id="id14">
+<a class="reference internal image-reference" href="_images/convergence.png"><img alt="image" src="_images/convergence.png" style="width: 65.0%;" /></a>
+<p class="caption"><span class="caption-text">image</span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Hermite-FEP-doc’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, DP Technology.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
